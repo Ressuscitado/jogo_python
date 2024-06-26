@@ -55,7 +55,6 @@ class Level:
             #  FPS desenhado na tela
             self.level_text(14, f'{self.name} - Timeout: {self.timeout / 1000 :.1f}s', C_WHITE, (10, 5))
             self.level_text(14, f'Fps: {clock.get_fps() :.0f}', C_WHITE, (10, WIN_HEIGHT - 35))
-            self.level_text(14, f'Entidade: {len(self.entity_list)}', C_WHITE, (10, WIN_HEIGHT - 20))
             #  Atualizar tela
             pygame.display.flip()
             #  Verificar relacionamentos entre entidades
